@@ -15,6 +15,9 @@ both `shorten` and `expand` return this object, it has 4 parameters:
 - `ok` - *contains either `True` or `False` depending on the outcome of the call*
 - `error` - *contains the error message if the api call was not successful*
 
+### Exceptions
+bot `shorten` and `expand` will raise a `NullStringException` if the url passed to them is `None`
+
 ## Examples
 shortening a link:
 
@@ -41,3 +44,5 @@ else:
     print(result.message)
     long_link = None
 ```
+
+in these simple examples exceptions are not handled, it's good practice to handle them.
