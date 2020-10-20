@@ -71,7 +71,7 @@ class Bitly:
 
 if __name__ == "__main__":
     # test
-    bitly = Bitly("468907af77deb6511f6f361cc418f1daebae3d36")  # YOUR_API_TOKEN_HERE
+    bitly = Bitly("YOUR_API_TOKEN_HERE")
     original_link = "https://github.com/SudoOmbro"
     short_link = bitly.shorten(original_link).short
     long_link = bitly.expand(short_link).long
